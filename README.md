@@ -1,73 +1,109 @@
-# Welcome to your Lovable project
+# Pixel Perfect Pixels - Legal Services Website
 
-## Project info
+A modern, responsive legal services website built with React, TypeScript, and Tailwind CSS.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+## Project Overview
 
-## How can I edit this code?
+This is the Connect2Attorney legal services platform, providing information about various legal practice areas including cancer lawsuits, hernia mesh lawsuits, IVC filter lawsuits, and paraquat exposure cases.
 
-There are several ways of editing your application.
+## Tech Stack
 
-**Use Lovable**
+- **Framework**: React with TypeScript
+- **Build Tool**: Vite
+- **Styling**: Tailwind CSS
+- **UI Components**: shadcn-ui (customized)
+- **Icons**: Lucide React
+- **State Management**: TanStack Query
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+## Available Scripts
 
-Changes made via Lovable will be committed automatically to this repo.
+```bash
+# Install dependencies
+npm install
 
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Start development server
 npm run dev
+
+# Build for production
+npm run build
+
+# Preview production build
+npm run preview
+
+# Run tests
+npm run test
 ```
 
-**Edit a file directly in GitHub**
+## Project Structure
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+```
+src/
+├── assets/          # Static assets (images, icons)
+├── components/
+│   ├── ui/          # Reusable UI components (shadcn-ui)
+│   │   ├── accordion.tsx
+│   │   ├── button.tsx
+│   │   ├── input.tsx
+│   │   ├── textarea.tsx
+│   │   ├── toast.tsx
+│   │   ├── toaster.tsx
+│   │   ├── tooltip.tsx
+│   │   └── use-toast.ts
+│   ├── ContactForm.tsx
+│   ├── CTABanner.tsx
+│   ├── FAQ.tsx
+│   ├── Footer.tsx
+│   ├── Header.tsx
+│   ├── Hero.tsx
+│   ├── LegalSolutions.tsx
+│   ├── Marquee.tsx
+│   ├── NavLink.tsx
+│   ├── OurMission.tsx
+│   ├── OurProcess.tsx
+│   └── Resources.tsx
+├── lib/
+│   └── utils.ts     # Utility functions
+├── pages/
+│   ├── Index.tsx
+│   └── NotFound.tsx
+├── App.tsx
+├── main.tsx
+└── index.css
+```
 
-**Use GitHub Codespaces**
+## UI Components Cleanup
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+This project has been optimized by removing 38 unused shadcn-ui components. Only the following actively used components remain in `src/components/ui/`:
 
-## What technologies are used for this project?
+- **accordion.tsx** - FAQ section
+- **button.tsx** - Used throughout the site
+- **input.tsx** - Contact form
+- **textarea.tsx** - Contact form
+- **toast.tsx** - Toast notifications
+- **toaster.tsx** - Toast notification container
+- **tooltip.tsx** - Tooltips
+- **use-toast.ts** - Toast hook for notifications
+- **sonner.tsx** - Alternative toast notifications
 
-This project is built with:
+## Features
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+- Responsive design for all screen sizes
+- Accessible UI components
+- SEO-friendly structure
+- Fast page loads with Vite
+- Interactive FAQ section
+- Contact form with validation
+- Multiple legal practice area pages
+- Process flow visualization
 
-## How can I deploy this project?
+## Getting Started
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+1. Clone the repository
+2. Run `npm install` to install dependencies
+3. Run `npm run dev` to start the development server
+4. Open http://localhost:5173 in your browser
 
-## Can I connect a custom domain to my Lovable project?
+## License
 
-Yes, you can!
+Proprietary - Connect2Attorney
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
